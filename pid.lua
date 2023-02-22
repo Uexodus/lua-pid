@@ -1,5 +1,3 @@
-
-
 local function _clamp(value, limits)
     local lower, upper = limits[1], limits[2]
     if value == nil then
@@ -72,10 +70,7 @@ function PID:run(input_, dt)
     elseif dt <= 0 then
         error("dt has negative value " .. tostring(dt) .. ", must be positive")
     end
-    print(self.sample_time, self.sample_time        )
-    if self.sample_time ~= nil and dt < self.sample_time and self.sample_time ~= nil then
-        return self._last_output
-    end
+    
     print(input_, dt)
     -- Compute error terms
     local error = self.setpoint - input_
