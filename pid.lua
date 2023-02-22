@@ -99,7 +99,7 @@ function PID:reset()
     self._integral = 0
     self._derivative = 0
 
-    self._integral = _clamp(self._integral, self.output_limits)
+
 
     self._last_time = tick()
     self._last_output = nil
