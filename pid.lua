@@ -1,14 +1,4 @@
-local function _clamp(value, limits)
-    local lower, upper = limits[1], limits[2]
-    if value == nil then
-        return nil
-    elseif upper ~= nil and value > upper then
-        return upper
-    elseif lower ~= nil and value < lower then
-        return lower
-    end
-    return value
-end
+
 
 
 
@@ -90,12 +80,11 @@ function PID:run(input_, dt)
 
     -- Compute integral and derivative terms
     self._integral = self._integral + self.Ki * error * dt
-    self._integral = _clamp(self._integral, self.output_limits)  -- Avoid integral windup
     self._derivative = -self.Kd * d_input / dt
 
     -- Compute final output
     local output = self._proportional + self._integral + self._derivative
-    output = _clamp(output, self.output_limits)
+
 
     -- Keep track of state
     self._last_output = output
