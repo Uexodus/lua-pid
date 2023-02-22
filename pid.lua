@@ -59,7 +59,6 @@ function PID:_compute_error(input_)
 end
 
 function PID:run(input_, dt)
-    print(self._auto_mode)
     if not self._auto_mode then
         return self._last_output
     end
@@ -71,7 +70,6 @@ function PID:run(input_, dt)
         error("dt has negative value " .. tostring(dt) .. ", must be positive")
     end
     
-    print(input_, dt)
     -- Compute error terms
     local error = self.setpoint - input_
     local d_input = input_ - (self._last_input ~= nil and self._last_input or input_)
@@ -103,7 +101,6 @@ function PID:run(input_, dt)
     self._last_output = output
     self._last_input = input_
     self._last_time = now
-    print(output)
     return output
 end
 
